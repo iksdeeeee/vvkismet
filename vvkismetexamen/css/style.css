@@ -7,11 +7,20 @@ banner{
     height: 30vh;
     width: 100vw;
     display: flex;
+    z-index: 1;
     flex-direction: column;
-      background:linear-gradient(45deg,#ffffff 50%,#aaa 50%);
+      background:linear-gradient(45deg,#ffffff 50%,rgba(255, 255, 255, 0) 65%);
+    }
+
+    .logo{
+        z-index: 2;
     }
 
     .eenblik{
+        position: absolute;
+        left: 200px;
+        top: 0px;
+        z-index: -1;
         
     }
 
