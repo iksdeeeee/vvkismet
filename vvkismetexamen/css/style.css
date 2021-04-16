@@ -18,7 +18,8 @@ banner{
 
     .eenblik{
         position: absolute;
-        left: 200px;
+        right: 0;
+        left: 30vh;
         top: 0px;
         z-index: -1;
         

@@ -3,7 +3,7 @@
   define("SERVERNAME", "localhost");
   define("USERNAME", "root");
   define("PASSWORD", "");
-  define("DBNAME", "jallabase");
+  define("DBNAME", "vvkismet");
 
   // var_dump($_POST);
   // Hier maken we een verbinding met de mysql-server en database

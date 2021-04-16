@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    <?php 
-    include("conect_db.php");
+    //include("conect_db.php");
    include("links.phtml");
    //include("security.php"); <- kijk hier effe na alex
    session_start();
