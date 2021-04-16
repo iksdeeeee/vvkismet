@@ -96,7 +96,7 @@ navbar {
 }
 
 .container {
-    min-height: calc(100vh - ($banner-height + $navbar-height));
+    min-height: calc(100vh - (#{$banner-height + $navbar-height}));
     width: 80vw;
     @include col();
     background-color: rgb(190, 190, 190);
@@ -105,7 +105,7 @@ navbar {
 }
 
 footer {
-    background-color: green;
+    background-color: darkgreen;
     height: 10vh;
     width: 100vw;
     display: flex;

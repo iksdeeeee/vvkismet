@@ -28,7 +28,7 @@ banner .logo img {
 banner .eenblik {
   height: 200px;
   width: 100%;
-  background-image: url("/pic/c7d6aa0dd51e747092c58378f9499f3e.jpg");
+  background-image: url("/vvkismetexamen/pic/voetbalveld.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,7 +50,7 @@ navbar {
 }
 
 .container {
-  min-height: calc(100vh - ($banner-height + $navbar-height));
+  min-height: calc(100vh - (250px));
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -60,7 +60,7 @@ navbar {
 }
 
 footer {
-  background-color: green;
+  background-color: darkgreen;
   height: 10vh;
   width: 100vw;
   display: flex;
