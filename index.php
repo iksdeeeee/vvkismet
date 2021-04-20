@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>vvkismet</title>
 
       <?php
       //include("conect_db.php");
@@ -24,27 +22,36 @@
       include("banner.php");
       include("navbar.php");
       ?>
+      <div id="login" class="logindialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>Login scherm</h2>
+            <form action="?pageid=index9" method="post">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email adres</label>
+                        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Emailadres" value="<?php if (isset($_GET['email'])) {
+                                                                                                                                                echo $_GET['email'];
+                                                                                                                                            } ?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Wachtwoord</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="wachtwoord">
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-outline-info btn-lg btn-block">Log in</button>
+                        <br>
+                    </div>
+                </form>
+		</div>
+      </div>
       <div class="container">
             <?Php
             $pageidexists = isset($_GET['pageid']);
-            $pageid = $pageidexists ? $_GET['pageid'] : "";
-            switch ($pageid) {
+            $pageid = $pageidexists ? $_GET['pageid'] : "home";
+            $fileName = "{$pageid}.php";
 
-                  default:
-                        include('home.php');
-                        break;
-
-                  case 'index1':
-                        include('home.php');
-                        break;
-
-                  case 'index2':
-                        include('producten.php');
-                        break;
-
-                  case 'index3':
-                        include('loginform.php');
-                        break;
+            if(file_exists($fileName)) {
+                  include($fileName);
             }
             ?>
       </div>
