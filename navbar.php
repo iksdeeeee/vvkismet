@@ -6,9 +6,10 @@
     <a href="?pageid=wedstrijden">wedstrijden</a>
     <?PHP
         $loggedIn = isset($_SESSION["userid"]);
-        if($loggedIn) : 
+        if($loggedIn) :
     ?>
-        <a href="?pageid=home">Uitloggen</a>
+
+        <a href="?pageid=logoutform">Uitloggen</a>
     <?php else : ?>
         <a href="#login">login</a>
     <?php endif; ?>

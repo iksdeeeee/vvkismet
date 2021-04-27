@@ -7,8 +7,8 @@
 
     <div class="col-6">
 
-
-<form action ="?pageid=index11" method ="post">
+<?php var_dump($pw,$id) ?>
+<form action ="?pageid=createpassword-script" method ="post">
 
   <div class="form-group">
     <label for="InputPassword">Wachtwoord</label>
@@ -23,8 +23,3 @@
 <br>
 <button type="submit" class="btn btn-outline-info btn-lg btn-block">Verstuur</button>
 </form>
-
-    </div>
-    <div class="col-6"> <img src="./img/3.gif" alt="rose"></div>
-
-</div>

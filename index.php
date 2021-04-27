@@ -9,7 +9,7 @@
       include("links.phtml");
       //include("security.php"); <- kijk hier effe na alex
       session_start();
-      //var_dump($_SESSION);
+      var_dump($_SESSION);
       ?>
 </head>
 <?php
@@ -26,7 +26,7 @@
 	<div>
 		<a href="#close" title="Close" class="close">X</a>
 		<h2>Login scherm</h2>
-            <form action="?pageid=index9" method="post">
+            <form action="?pageid=login-script" method="post">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Email adres</label>
                         <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Emailadres" value="<?php if (isset($_GET['email'])) {

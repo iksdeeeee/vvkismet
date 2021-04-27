@@ -45,17 +45,17 @@ if (mysqli_num_rows($result) == 1) {
                             '$achternaam',
                             '$email',
                             '$funtie',
-                            `1`)";
-   echo $sql;
+                             1)";
+   //echo $sql;
     $result = mysqli_query($conn, $sql);
 
     $id = mysqli_insert_id($conn);
 
-    var_dump($result);
+    //var_dump($result);
 
     if ($result) {
 
-    header("Refresh: 2; url=./index.php?pageid=createpassword&id=' . $id . '&pw=' . $password_hash . ");
+    header("Refresh: 2; url=./index.php?pageid=createpassword&id=" . $id . "&pw=" . $password_hash . "");
     } else {
         echo '<div class="alert alert-danger" role="alert">
     Er is iets fout gegaan met de registratie. Probeer het nog maals.</div>';

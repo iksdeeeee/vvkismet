@@ -1,5 +1,5 @@
 <?php
-//var_dump($_POST);
+var_dump($_POST);
 
 require_once("functions.php");
 $password = sanitize($_POST["password"]);
@@ -55,7 +55,9 @@ if(!strcmp( $password, $verify_password )) {
 } else {
 echo '<div class="alert alert-danger" role="alert">
 Het id in de activatie link is niet bij ons bekent.</div>';
-header("Refresh: 2; url=./index.php?content=home");
+echo $sql;
+var_dump($result);
+header(" url=./index.php?content=home");
 }
                 
 } else {
