@@ -5,7 +5,7 @@
       <title>vvkismet</title>
 
       <?php
-      //include("conect_db.php");
+      include("conect_db.php");
       include("links.phtml");
       //include("security.php"); <- kijk hier effe na alex
       session_start();
