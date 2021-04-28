@@ -17,8 +17,11 @@
                     </div>
                     <label for="funtie">funtie</label>
   <select name="funtie" id="funtie">
-    <option value="trainer">trainer</option>
-    <option value="coach">coach</option>
+    <option value="Trainer">Trainer</option>
+    <option value="Coach">Coach</option>
+    <option value="Voorzitter">Voorzitter</option>
+    <option value="Secretaris">Secretaris</option>
+    <option value="ICT-Beheerder">ICT-Beheerder</option>
   </select>
                     </div>
                   <button type="submit" class="btn btn-primary">Sign in</button>

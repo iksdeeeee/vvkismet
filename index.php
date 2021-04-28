@@ -9,7 +9,7 @@
       include("links.phtml");
       //include("security.php"); <- kijk hier effe na alex
       session_start();
-      var_dump($_SESSION);
+      //var_dump($_SESSION);
       ?>
 </head>
 <?php
