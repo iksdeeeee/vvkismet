@@ -5,6 +5,7 @@ $naam = sanitize($_POST["naam"]);
 $achternaam = sanitize($_POST["achternaam"]);
 $funtie = sanitize($_POST["funtie"]);
 $email = sanitize($_POST["email"]);
+$userid = sanitize($_SESSION['userid']);
 
 
 $sql = "SELECT * FROM `users` WHERE `email` = '$email'";
@@ -45,7 +46,7 @@ if (mysqli_num_rows($result) == 1) {
                             '$achternaam',
                             '$email',
                             '$funtie',
-                             1)";
+                             $userid)";
    //echo $sql;
     $result = mysqli_query($conn, $sql);
 

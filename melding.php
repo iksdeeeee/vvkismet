@@ -10,6 +10,7 @@ if ($row2 = mysqli_fetch_assoc($result2))
 ?>
 <div>
 <?php
+var_dump($result);
 $loggedIn = isset($_SESSION["userid"]);
 if($loggedIn) echo "<div class='form-group'>
 <form action='?pageid=meldingfunc' method='post'>
