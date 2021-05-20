@@ -59,6 +59,18 @@ banner {
         }
     }
 
+    #welcome-user {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: #FFF;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     .eenblik {
         height: $banner-height;
         width: 100%;
@@ -85,12 +97,31 @@ banner {
 
 $navbar-height: 50px;
 
-navbar {
+.navbar {
     background-color: green;
     height: $navbar-height;
     display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
     @include radius(0px, 0px, 8px, 8px);
+
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 0 15px;
+
+        &:last-child {
+            margin-left: auto;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
+
+
 
 .container {
     min-height: calc(100vh - (#{$banner-height + $navbar-height}));
@@ -160,6 +191,44 @@ footer {
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
+
+    &:hover {
+        background: #00d9ff;
+    }
 }
 
-.close:hover { background: #00d9ff; }
+.comment {
+    background-color: #FFF;
+    display: grid;
+    margin: 10px 10px 0px 10px;
+    min-height: 60px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #b1b1b1;
+}
+
+textarea{
+    width: 100%;
+}
+
+#label{
+    display: flex;
+    text-align: center;
+    color: black;
+    margin: auto;
+}
+
+.meldingtext{
+    width: 100%;
+}
+.flip {
+    background-color: gray;
+    display: grid;
+    margin: 10px 10px 0px 10px;
+    min-height: 60px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #b1b1b1;
+    position: sticky;
+    bottom: 0;
+}

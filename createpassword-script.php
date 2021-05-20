@@ -1,5 +1,4 @@
 <?php
-var_dump($_POST);
 
 require_once("functions.php");
 $password = sanitize($_POST["password"]);
@@ -48,15 +47,13 @@ if(!strcmp( $password, $verify_password )) {
                 } else {
                     echo '<div class="alert alert-danger" role="alert">
                     U heeft een van beide wachtwoordvelden niet goed ingevuld. Probeer het nogmaals.</div>';
-                    header("Refresh: 2; url=./index.php?pageid=index10&id=$id");
+                    header("Refresh: 2; url=./index.php?pageid=createpassword&id=$id");
                 }
         } else {
         }    
 } else {
 echo '<div class="alert alert-danger" role="alert">
 Het id in de activatie link is niet bij ons bekent.</div>';
-echo $sql;
-var_dump($result);
 header(" url=./index.php?content=home");
 }
                 

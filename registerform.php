@@ -1,3 +1,5 @@
+<?PHP $loggedIn = isset($_SESSION["userid"]);
+if($loggedIn){ ?>
 <form action="?pageid=register" method="post">
               <form>
                 <div class="form-row">
@@ -27,3 +29,5 @@
                   <button type="submit" class="btn btn-primary">Sign in</button>
               </form>
               </div>
+</div>
+              <?php } else { header("Location: ./index.php?pageid=home"); } ?>

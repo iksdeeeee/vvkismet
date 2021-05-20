@@ -3,7 +3,7 @@
 
 <head>
       <title>vvkismet</title>
-
+      <link rel="icon" href="/pic/kismetlogo.jpg" type="image/gif">
       <?php
       include("conect_db.php");
       include("links.phtml");

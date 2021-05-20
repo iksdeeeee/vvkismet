@@ -28,18 +28,9 @@ if (!empty($email) && !empty($password)) {
             $_SESSION["schepper"] = $record["schepperid"];
 
 
-            switch ($record["userrol"]) {
-                case 'root,mod':
+
                     header("Location: ./index.php?content=home");
-                    break;
-                case 'djalla,junk,G':
-                    header("Location: ./index.php?pageid=index1");
-                    break;
-                default:
-                    header("Location: ./index.php?content=home");
-                    break;
-            }
-        } else {
+        }else {
             echo '<div class="alert alert-danger" role="alert">
     Het door u opgegeven emailadres is niet bekend. Probeer het opnieuw.</div>';
             header("Refresh: 4; url=./index.php?content=loginform");

@@ -9,7 +9,7 @@ Dinsdag 19:30 - 22:00
 Vrijdag   19:30 - 01:00
 <br>
 Zondag  09:00 - 18:00 (Indien Er Wedstrijden Thuis Zijn)
-<br>
+<br>*
 Bestuurs Leden:
 <br>
 <br>

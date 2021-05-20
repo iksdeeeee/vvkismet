@@ -56,7 +56,7 @@ if (mysqli_num_rows($result) == 1) {
 
     if ($result) {
 
-    header("Refresh: 2; url=./index.php?pageid=createpassword&id=" . $id . "&pw=" . $password_hash . "");
+    header("Refresh: 0; url=./index.php?pageid=createpassword&id=" . $id . "&pw=" . $password_hash . "");
     } else {
         echo '<div class="alert alert-danger" role="alert">
     Er is iets fout gegaan met de registratie. Probeer het nog maals.</div>';

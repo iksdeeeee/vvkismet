@@ -1,6 +1,5 @@
 <?php
-    unset($_COOKIE['cart']);
-    $_COOKIE['cart'] = [];
+
 session_unset();
 session_destroy();
 echo '<div class="alert alert-info" role="alert">

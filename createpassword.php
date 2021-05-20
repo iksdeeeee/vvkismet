@@ -6,8 +6,6 @@
 <div class="row">
 
     <div class="col-6">
-
-<?php var_dump($pw,$id) ?>
 <form action ="?pageid=createpassword-script" method ="post">
 
   <div class="form-group">

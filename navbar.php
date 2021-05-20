@@ -1,4 +1,4 @@
-<navbar>
+<navbar class="navbar">
     <a href="?pageid=home">home</a>
     <a href="?pageid=melding">meldingen</a>
     <a href="?pageid=contact">contact</a>
