@@ -40,7 +40,7 @@ if (mysqli_num_rows($result) == 1) {
                              `email`,
                              `funtie`,
                              `schepperid`) 
-                VALUES      (NULL,
+                VALUES      (null,
                             '$password',
                             '$naam',
                             '$achternaam',

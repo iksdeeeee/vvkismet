@@ -1,10 +1,10 @@
 <navbar class="navbar">
-    <a href="?pageid=home">home</a>
-    <a href="?pageid=melding">meldingen</a>
-    <a href="?pageid=contact">contact</a>
-    <a href="?pageid=archief">archief</a>
-    <a href="?pageid=wedstrijden">wedstrijden</a>
-    <a href="?pageid=registerform">registreren</a>
+    <a href="?pageid=home">Home</a>
+    <a href="?pageid=melding">Meldingen</a>
+    <a href="?pageid=contact">Contact</a>
+    <a href="?pageid=archief">Archief</a>
+    <a href="?pageid=wedstrijden">Wedstrijden</a>
+    <a href="?pageid=registerform">Registreren</a>
     <?PHP
         $loggedIn = isset($_SESSION["userid"]);
         if($loggedIn) :
