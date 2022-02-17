@@ -1,8 +1,4 @@
 <?php
-
-
-
-
     $title = $_POST["title"];
     $text  = $_POST["text"];
     $userid = $_SESSION["userid"];
