@@ -1,10 +1,11 @@
 
     <footer>
         <!-- Copyright -->
-            <p>© 2021
-        <a href="http://vvkismet.net/">vvkismet</a>
+            <p>© 2022
+               <br>
+        <a href="http://vvkismet.net/">Website V.V.Kismet</a>
         <br>
-        <a href="http://www.stichtingasha.nl/#/">stichtingasha</a>
+        <a href="http://www.stichtingasha.nl/#/">Website Stichting Asha</a>
         </p>
         <!-- Copyright -->
     </footer>
