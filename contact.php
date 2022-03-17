@@ -43,44 +43,52 @@
                 <div class="card">
                     <div class="card-body">
                         <h3>Openingstijden:<h3>
-                        <hr class="my-2">
+                                <hr class="my-2">
                                 <h6>Dinsdag 19:30 - 22:00 <br>
                                     Vrijdag 19:30 - 01:00 <br>
                                     Zondag 09:00 - 18:00 (Indien Er Wedstrijden Thuis Zijn) <br>
                                     <br>
-                        <h3> Bestuurs Leden:<h3>
-                        <hr class="my-2">
-                                <h6>Dhr. Ronald Kalka : Functie Voorzitter <br>
-                                        E-mail: r.kalka@ziggo.nl <br>
-                                    Dhr. B. Sheombar : Functie Secretaris  <br> 
-                                    Dhr. Rabin Kalka : Functie Wedstrijd Secretaris
-                                   
+                                    <h3> Bestuurs Leden:<h3>
+                                            <hr class="my-2">
+                                            <h6>Dhr. Ronald Kalka : Functie Voorzitter <br>
+                                                E-mail: r.kalka@ziggo.nl <br>
+                                                Dhr. B. Sheombar : Functie Secretaris <br>
+                                                Dhr. Rabin Kalka : Functie Wedstrijd Secretaris
+
                     </div>
                 </div>
             </div>
             <div class="col-6">
                 <div class="card">
                     <div class="card-body">
-                        <form>
+                        <form form name="contactform" action="?pageid=nieuwe_vraag_script"
+                            onsubmit="return validateForm()" method="post">
                             <h2>Stel hier uw vragen<h2>
                                     <hr class="my-3">
                                     <div class="form-group">
-                                        <label for="nameForm"><h4>Naam</label>
-                                        <input type="name" class="form-control" id="nameForm"
+                                        <label for="nameForm">
+                                            <h4>Naam
+                                        </label>
+                                        <input name="name" type="name" class="form-control" id="nameForm"
                                             placeholder="Voor en achternaam">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1"><h4>Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                        <label for="exampleInputEmail1">
+                                            <h4>Email address
+                                        </label>
+                                        <input name="email" type="email" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="emailHelp">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleFormControlTextarea1"><h4>Beschrijf hier uw vraag</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                        <label for="exampleFormControlTextarea1">
+                                            <h4>Beschrijf hier uw vraag
+                                        </label>
+                                        <textarea name="question" class="form-control" id="exampleFormControlTextarea1"
                                             rows="3"></textarea>
                                         <br>
                                         <button type="submit" class="btn btn-primary">Verzenden</button>
                                     </div>
+
                         </form>
                     </div>
                 </div>

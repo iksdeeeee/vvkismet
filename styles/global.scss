@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-// FYI variables do actually exist in CSS
-// :root {
-//     --banner-height: 200px;
-// }
-
-//#region mixins
 @mixin col() {
     display: flex;
     flex-direction: column;
@@ -37,6 +31,7 @@
 //#endregion
 
 body {
+    background-image: url("voetbalveld.jpg");
     margin: 0;
     padding: 0;
 }
@@ -45,7 +40,7 @@ $banner-height: 200px;
 
 // nesting
 // margin, padding, border
-banner {
+    .banner {
     @include row();
     background-color: white;
     height: $banner-height;

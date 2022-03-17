@@ -13,7 +13,7 @@ if ($row2 = mysqli_fetch_assoc($result2))
 ;}
 ?>
 <div>
-<?php
+    <?php
 $loggedIn = isset($_SESSION["userid"]);
 if($loggedIn) echo "<div class='flip'>
 <form  action='?pageid=meldingfunc' method='post' enctype='multipart/form-data'>

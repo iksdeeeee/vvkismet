@@ -18,14 +18,12 @@ if (mysqli_num_rows($result) == 1) {
     header("Refresh: 4; url=./index.php?content=registerform");
 } else {
 
-      // Ik ga een ingewikkeld tijdelijk password verzinnen
   date_default_timezone_set("Europe/Amsterdam");
   $date = date('d-m-Y H:i:s'); 
   $part_of_email = substr($email,0,4);
 
   $password = password_hash($date.$part_of_email, PASSWORD_BCRYPT);
 
-  // De hash van dit tijdelijke password gaat mee met de activatielink
   $password_hash = password_hash($password, PASSWORD_BCRYPT);
 
     $naam = sanitize($_POST["naam"]);
