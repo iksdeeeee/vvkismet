@@ -73,10 +73,15 @@
                                             placeholder="Voor en achternaam">
                                     </div>
                                     <div class="form-group">
+<<<<<<< Updated upstream
                                         <label for="exampleInputEmail1">
                                             <h4>Email address
                                         </label>
                                         <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+=======
+                                        <label for="exampleInputEmail1"><h4> E-mailadres</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+>>>>>>> Stashed changes
                                             aria-describedby="emailHelp">
                                     </div>
                                     <div class="form-group">
