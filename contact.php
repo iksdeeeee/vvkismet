@@ -106,7 +106,7 @@
 </div>
 <br>
 <div class="container" id="map">
-    <iframe src="https://maps.google.com/maps?q=Sportpark%20De%20Zuilenselaan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    <iframe src="https://maps.google.com/maps?q=Burgemeester%20Norbruislaan%20680&t=&z=13&ie=UTF8&iwloc=&output=embed"
         frameborder="0" style="border:0" id="iframe" allowfullscreen width="100%" height="450 px"></iframe>
 </div>
 <!-- </main> -->

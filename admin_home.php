@@ -1,3 +1,18 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/ css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
 <?php
     $sql  = "SELECT * FROM `nieuws`";
     $sql2 = "SELECT * FROM `contactform`";
@@ -27,7 +42,6 @@
         <td>{$record2['email']}</td>
         <td>{$record2['question']}</td>
         <td>{$record2['status']}</td>
-        <td><a href='index.php?pageid=update_question&id={$record2['id']}'><i class='bi bi-pencil-square'></i><a></td>
         <td><a href='index.php?pageid=delete_question_script&id={$record2['id']}'><i class='bi bi-x-square text-danger'></i><a></td>
         </tr>";
     }
@@ -36,7 +50,7 @@
     while ($record3 = mysqli_fetch_assoc($result3)) {
         $tbl_rows3 .= "  <tr>
         <td>{$record3['message']}</td>
-        
+        <td><a href='index.php?pageid=update_voorzitterbericht&id={$record3['id']}'><i class='bi bi-pencil-square'></i><a></td>
         </tr>";
     }
 
@@ -48,14 +62,13 @@
     <BR>
     <div class="card">
         <div class="card-body">
-            <div class="jumbotron">
+            
                 <h1 class="display-4">Admin pagina van V.V. Kismet</h1>
                 <p class="lead">Bekijk hieronder alle mogelijkheden om berichten aan te passen binnen de website.</p>
                 <hr class="my-4">
-            </div>
+            
         </div>
     </div>
-    <div class="jumbotron">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
@@ -78,11 +91,10 @@
                                             <thead>
                                                 <tr>
                                                     <th scope="col">Nieuwsbericht</th>
-                                                    <th scope="col">Datum</th>
+                                                    <th scope="col-6">Datum</th>
                                                     <th scope="col">Bewerken</th>
                                                     <th scope="col">Verwijderen</th>
-                                                    <th scope="col"></th>
-                                                    <th scope="col"></th>
+                                    
                                                 </tr>
                                             </thead>
                                             <tbody>

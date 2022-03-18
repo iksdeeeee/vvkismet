@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 17 mrt 2022 om 15:07
--- Serverversie: 5.7.31
--- PHP-versie: 7.3.21
+-- Generation Time: Mar 18, 2022 at 12:21 AM
+-- Server version: 5.7.36
+-- PHP Version: 7.4.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `contactform`
+-- Table structure for table `contactform`
 --
 
 DROP TABLE IF EXISTS `contactform`;
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `contactform` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `contactform`
+-- Dumping data for table `contactform`
 --
 
 INSERT INTO `contactform` (`id`, `name`, `email`, `question`, `status`) VALUES
@@ -48,7 +48,7 @@ INSERT INTO `contactform` (`id`, `name`, `email`, `question`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `meldingen`
+-- Table structure for table `meldingen`
 --
 
 DROP TABLE IF EXISTS `meldingen`;
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `meldingen` (
 ) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `meldingen`
+-- Dumping data for table `meldingen`
 --
 
 INSERT INTO `meldingen` (`msgid`, `title`, `text`, `userid`, `datum`, `tijd`, `images`) VALUES
@@ -73,7 +73,7 @@ INSERT INTO `meldingen` (`msgid`, `title`, `text`, `userid`, `datum`, `tijd`, `i
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `nieuws`
+-- Table structure for table `nieuws`
 --
 
 DROP TABLE IF EXISTS `nieuws`;
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `nieuws` (
 ) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `nieuws`
+-- Dumping data for table `nieuws`
 --
 
 INSERT INTO `nieuws` (`id`, `bericht`, `datum`) VALUES
@@ -94,7 +94,29 @@ INSERT INTO `nieuws` (`id`, `bericht`, `datum`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `users`
+-- Table structure for table `teammsg`
+--
+
+DROP TABLE IF EXISTS `teammsg`;
+CREATE TABLE IF NOT EXISTS `teammsg` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `teamID` enum('e','b') NOT NULL,
+  `message` varchar(250) NOT NULL,
+  `date` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `teammsg`
+--
+
+INSERT INTO `teammsg` (`id`, `teamID`, `message`, `date`) VALUES
+(1, 'e', 'Kan iemand de kleding van de vorige week wassen en meenemen?', '2022-03-18 01:01:20');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
 --
 
 DROP TABLE IF EXISTS `users`;
@@ -110,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`userid`, `naam`, `achternaam`, `email`, `funtie`, `schepperid`, `password`) VALUES
@@ -121,21 +143,22 @@ INSERT INTO `users` (`userid`, `naam`, `achternaam`, `email`, `funtie`, `scheppe
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `voorzitter`
+-- Table structure for table `voorzitter`
 --
 
 DROP TABLE IF EXISTS `voorzitter`;
 CREATE TABLE IF NOT EXISTS `voorzitter` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `message` varchar(250) NOT NULL,
-  PRIMARY KEY (`message`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `voorzitter`
+-- Dumping data for table `voorzitter`
 --
 
-INSERT INTO `voorzitter` (`message`) VALUES
-('Hallo iedereen. Welkom op V.V. Kismet');
+INSERT INTO `voorzitter` (`id`, `message`) VALUES
+(1, 'Hallo iedereen en Welkom op de website van V.V. Kismet. Kijk gerust rond en wees niet bang om een vraag te stellen.');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -2,10 +2,10 @@
     include("./functions.php");
 
     $id = sanitize($_POST["id"]);
-    $bericht = sanitize($_POST["bericht"]);
+    $message = sanitize($_POST["message"]);
 
-    $sql = "UPDATE `nieuwsbericht` 
-            SET `bericht`='{$bericht}',
+    $sql = "UPDATE `voorzitter` 
+            SET `message`='{$message}',
             WHERE `id`= {$id}";
 
     $result = mysqli_query($conn, $sql);

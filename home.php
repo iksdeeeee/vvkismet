@@ -1,3 +1,19 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/ css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+
 <div class="container">
     <div class="row">
         <div class="col">
@@ -12,9 +28,6 @@
                 </div>
             </div>
             <br>
-
-
-
             <div class="card">
                 <div class="card-body">
                     <h5 class="display-5"></h5>
@@ -46,48 +59,49 @@
         </div>
         <div class="col-5">
             <BR>
-            
-            <div class="card" style="width: 33rem;">
+
+            <div class="card" style="width: 27rem;">
                 <div class="card-body">
                     <h5 class="card-title">Bericht van de Voorzitter!</h5>
                     <hr class="my-4">
                     <p class="card-text"><?php $berichtvoorzitter = "SELECT * FROM `voorzitter`";
-                                               $result2 = mysqli_query($conn, $berichtvoorzitter); 
-                                               while ($bericht = mysqli_fetch_assoc($result2)) {
-                                               $message =  $bericht['message'];}
-                                               echo"$message";
-                                               ?></p>
+                                            $result2 = mysqli_query($conn, $berichtvoorzitter);
+                                            while ($bericht = mysqli_fetch_assoc($result2)) {
+                                                $message =  $bericht['message'];
+                                            }
+                                            echo "$message";
+                                            ?></p>
                 </div>
             </div>
             <Br>
             <?php
-                $sql = "SELECT * FROM `nieuws`";
-                $result = mysqli_query($conn, $sql);
-                $tbl_rows = "";
-                while ($record = mysqli_fetch_assoc($result)) {
+            $sql = "SELECT * FROM `nieuws`";
+            $result = mysqli_query($conn, $sql);
+            $tbl_rows = "";
+            while ($record = mysqli_fetch_assoc($result)) {
                 $tbl_rows .= "  <tr>
                                 <td>{$record['bericht']}</td>
                                 <td>{$record['datum']}</td>
                                 </tr>";
-                }
+            }
             ?>
             <?php
-echo '
-    <div class="card">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Nieuws</th>
-                    <th scope="col">Datum</th>
-                </tr>
-            </thead>
-            <tbody>
-                '.$tbl_rows.'
-            </tbody>
-        </table>
-    </div>
-</section>'
-?>
+            echo '
+                    <div class="card">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nieuws</th>
+                                    <th scope="col">Datum</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ' . $tbl_rows . '
+                            </tbody>
+                        </table>
+                    </div>
+                </section>'
+            ?>
         </div>
     </div>
 </div>

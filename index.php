@@ -12,25 +12,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css" role="style">
+    
       <?php
       include("conect_db.php");
       include("links.phtml");
+      
       //include("security.php"); 
       session_start();
       ?>
 </head>
-<?php
-
-?>
-
 <body>
-
-      <?php
-      include("banner.php");
-      include("navbar.php");
-      ?>
-      
       <div id="login" class="logindialog">
 	<div>
 		<a href="#close" title="Close" class="close">X</a>
@@ -54,7 +45,10 @@
 		</div>
       </div>
       <div class="container">
+
             <?Php
+            include("banner.php");
+            include("navbar.php");
             $pageidexists = isset($_GET['pageid']);
             $pageid = $pageidexists ? $_GET['pageid'] : "home";
             $fileName = "{$pageid}.php";
@@ -65,6 +59,7 @@
             ?>
       </div>
       <?php
+      
       include("footer.php");
       ?>
 </body>
