@@ -21,7 +21,7 @@
       session_start();
       ?>
 </head>
-<body>
+<body background ="./pic/voetbalveld.jpg";>
       <div id="login" class="logindialog">
 	<div>
 		<a href="#close" title="Close" class="close">X</a>
