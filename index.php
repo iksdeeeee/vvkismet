@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
       <title>V.V. Kismet</title>
       <link rel="icon" href="/pic/kismetlogo.jpg" type="image/gif">
