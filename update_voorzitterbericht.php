@@ -20,7 +20,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12"></div>
-                    <form form name="update_voorzitterbericht" action="index.php?pageid=update_voorzitter_script"
+                    <form form name="update_voorzitterbericht" action="index.php?pageid=update_voorzitter_script.php"
                         onsubmit="return validateForm()" method="post">
                         <div class="form-row">
                             <div class="form-group">

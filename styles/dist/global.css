@@ -40,7 +40,7 @@ body {
 .banner .eenblik {
     height: 200px;
     width: 100%;
-    background-image: url("/pic/voetbalveld.jpg");
+    background-image: url("./pic/voetbalveld.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -52,7 +52,7 @@ body {
 }
 
 .navbar {
-    background-color: green;
+    background-color: rgb(0, 128, 0);
     height: 50px;
     display: flex;
     align-items: center;
@@ -82,13 +82,13 @@ body {
     width: 80vw;
     display: flex;
     flex-direction: column;
-    background-color: #bebebe;
+    background-color: #f8f8f8;
     margin-left: auto;
     margin-right: auto;
 }
 
 footer {
-    background-color: darkgreen;
+    background-color: rgb(0, 128, 0);
     height: 10vh;
     display: flex;
     flex-direction: column;
@@ -180,7 +180,7 @@ textarea {
 }
 
 .flip {
-    background-color: gray;
+    background-color: rgb(194, 194, 194);
     display: grid;
     margin: 10px 10px 0px 10px;
     min-height: 60px;
