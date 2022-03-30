@@ -71,7 +71,7 @@
                                             }
                                             echo "$message";
                                             ?></p>
-                    <img src="./pic/voorzitter.jpg" class="card-img-bottom" alt="...">
+                    <img src="./pic/voorzitter.jpg" class="card-img-bottom" width="100px" height="250" alt="...">
                 </div>
             </div>
             <Br>
