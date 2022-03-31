@@ -13,7 +13,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12"></div>
-                            <form name="create_nieuwsbericht" action="?pageid=create_nieuwsbericht_script"
+                            <form name="create_nieuwsbericht" action="?content=create_nieuwsbericht_script"
                                 onsubmit="return validateForm()" method="post">
                                 <div class="form-row">
                                     <div class="form-group">

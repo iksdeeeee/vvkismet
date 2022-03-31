@@ -47,5 +47,5 @@
     $id = mysqli_insert_id($conn);
     //var_dump($sql);
     $result = mysqli_query($conn, $sql);
-    header("Refresh: 0; url=./index.php?pageid=melding");
+    header("Refresh: 0; url=./index.php?content=melding");
 ?>

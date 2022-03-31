@@ -38,7 +38,7 @@ if(!strcmp( $password, $verify_password )) {
         
                     echo '<div class="alert alert-info" role="alert">
                     U wordt doorgestuurd naar de inlogpagina waar  kunt inloggen.</div>';
-                    header("Refresh: 2; url=./index.php?pageid=index1&email=$email");
+                    header("Refresh: 2; url=./index.php?content=index1&email=$email");
                     } else{
                         echo '<div class="alert alert-danger" role="alert">
                         U heeft een verkeerd wachtwoord gegeven.</div>';
@@ -47,7 +47,7 @@ if(!strcmp( $password, $verify_password )) {
                 } else {
                     echo '<div class="alert alert-danger" role="alert">
                     U heeft een van beide wachtwoordvelden niet goed ingevuld. Probeer het nogmaals.</div>';
-                    header("Refresh: 2; url=./index.php?pageid=createpassword&id=$id");
+                    header("Refresh: 2; url=./index.php?content=createpassword&id=$id");
                 }
         } else {
         }    

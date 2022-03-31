@@ -22,9 +22,9 @@
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-        header("Location: ./index.php?pageid=message&alert=question-succes");
+        header("Location: ./index.php?content=message&alert=question-succes");
     }   else {
-        header("Location: ./index.php?pageid=message&alert=question-fail");
+        header("Location: ./index.php?content=message&alert=question-fail");
     }
 
 

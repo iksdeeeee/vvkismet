@@ -6,7 +6,7 @@
 <div class="row">
 
     <div class="col-6">
-<form action ="?pageid=createpassword-script" method ="post">
+<form action ="?content=createpassword-script" method ="post">
 
   <div class="form-group">
     <label for="InputPassword">Wachtwoord</label>

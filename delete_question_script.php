@@ -3,7 +3,7 @@
 
     $id = sanitize($_GET["id"]);
 
-    $sql = "DELETE FROM `nieuws` WHERE `id` = {$id}";
+    $sql = "DELETE FROM `contactform` WHERE `id` = {$id}";
 
     $result = mysqli_query($conn, $sql);
 

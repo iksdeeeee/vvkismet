@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 18, 2022 at 12:21 AM
--- Server version: 5.7.36
--- PHP Version: 7.4.26
+-- Gegenereerd op: 31 mrt 2022 om 00:35
+-- Serverversie: 5.7.31
+-- PHP-versie: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contactform`
+-- Tabelstructuur voor tabel `contactform`
 --
 
 DROP TABLE IF EXISTS `contactform`;
@@ -33,47 +33,13 @@ CREATE TABLE IF NOT EXISTS `contactform` (
   `name` varchar(30) NOT NULL,
   `email` varchar(35) NOT NULL,
   `question` varchar(500) NOT NULL,
-  `status` enum('Onbeantwoord','Beantwoord') CHARACTER SET latin1 COLLATE latin1_spanish_ci DEFAULT 'Onbeantwoord',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `contactform`
---
-
-INSERT INTO `contactform` (`id`, `name`, `email`, `question`, `status`) VALUES
-(4, '', '', '', 'Onbeantwoord'),
-(5, 'Alex van der Wel', 'alexvanderwelles@gmail.com', 'Hallo is de club open?', 'Onbeantwoord');
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `meldingen`
---
-
-DROP TABLE IF EXISTS `meldingen`;
-CREATE TABLE IF NOT EXISTS `meldingen` (
-  `msgid` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(100) NOT NULL,
-  `text` varchar(1000) NOT NULL,
-  `userid` int(11) NOT NULL,
-  `datum` date NOT NULL,
-  `tijd` time NOT NULL,
-  `images` varchar(1234) DEFAULT NULL,
-  PRIMARY KEY (`msgid`)
-) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `meldingen`
---
-
-INSERT INTO `meldingen` (`msgid`, `title`, `text`, `userid`, `datum`, `tijd`, `images`) VALUES
-(36, 'Gesloten Clubhuis', 'Het clubhuis is tijdelijk gesloten voor bezoek', 8, '2022-01-27', '02:49:48', '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `nieuws`
+-- Tabelstructuur voor tabel `nieuws`
 --
 
 DROP TABLE IF EXISTS `nieuws`;
@@ -82,19 +48,34 @@ CREATE TABLE IF NOT EXISTS `nieuws` (
   `bericht` varchar(300) NOT NULL,
   `datum` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `nieuws`
+-- Gegevens worden geëxporteerd voor tabel `nieuws`
 --
 
 INSERT INTO `nieuws` (`id`, `bericht`, `datum`) VALUES
-(18, 'Testerino 74', '2022-03-03 10:56:51');
+(20, 'Test 2322', '2022-03-31 01:33:21');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `teammsg`
+-- Tabelstructuur voor tabel `spelers`
+--
+
+DROP TABLE IF EXISTS `spelers`;
+CREATE TABLE IF NOT EXISTS `spelers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `spelernaam` varchar(250) NOT NULL,
+  `rugnummer` varchar(100) NOT NULL,
+  `teamid` enum('Team A','Team B','Team C','Team D','Team E') NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `teammsg`
 --
 
 DROP TABLE IF EXISTS `teammsg`;
@@ -107,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `teammsg` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `teammsg`
+-- Gegevens worden geëxporteerd voor tabel `teammsg`
 --
 
 INSERT INTO `teammsg` (`id`, `teamID`, `message`, `date`) VALUES
@@ -116,7 +97,7 @@ INSERT INTO `teammsg` (`id`, `teamID`, `message`, `date`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Tabelstructuur voor tabel `users`
 --
 
 DROP TABLE IF EXISTS `users`;
@@ -132,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `users`
+-- Gegevens worden geëxporteerd voor tabel `users`
 --
 
 INSERT INTO `users` (`userid`, `naam`, `achternaam`, `email`, `funtie`, `schepperid`, `password`) VALUES
@@ -143,7 +124,7 @@ INSERT INTO `users` (`userid`, `naam`, `achternaam`, `email`, `funtie`, `scheppe
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voorzitter`
+-- Tabelstructuur voor tabel `voorzitter`
 --
 
 DROP TABLE IF EXISTS `voorzitter`;
@@ -154,11 +135,11 @@ CREATE TABLE IF NOT EXISTS `voorzitter` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `voorzitter`
+-- Gegevens worden geëxporteerd voor tabel `voorzitter`
 --
 
 INSERT INTO `voorzitter` (`id`, `message`) VALUES
-(1, 'Hallo iedereen en Welkom op de website van V.V. Kismet. Kijk gerust rond en wees niet bang om een vraag te stellen.');
+(1, 'Hallo iedereen en Welkom op de website van V.V. Kismet.');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

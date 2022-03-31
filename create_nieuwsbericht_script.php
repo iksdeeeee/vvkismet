@@ -18,9 +18,9 @@
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-        header("Location: ./index.php?pageid=message&alert=course-succes");
+        header("Location: ./index.php?content=message&alert=course-succes");
     }   else {
-        header("Location: ./index.php?pageid=message&alert=course-fail");
+        header("Location: ./index.php?content=message&alert=course-fail");
     }
 
 

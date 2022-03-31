@@ -35,8 +35,8 @@
         <td>{$record['id']}</td>
         <td>{$record['bericht']}</td>
         <td>{$record['datum']}</td>
-        <td><a href='index.php?pageid=update_nieuwsbericht&id={$record['id']}'><i class='bi bi-pencil-square'></i><a></td>
-        <td><a href='index.php?pageid=delete_nieuwsbericht_script&id={$record['id']}'><i class='bi bi-x-square text-danger'></i><a></td>
+        <td><a href='index.php?content=update_nieuwsbericht&id={$record['id']}'><i class='bi bi-pencil-square'></i><a></td>
+        <td><a href='index.php?content=delete_nieuwsbericht_script&id={$record['id']}'><i class='bi bi-x-square text-danger'></i><a></td>
         </tr>";
     }
 
@@ -47,7 +47,7 @@
         <td>{$record2['name']}</td>
         <td>{$record2['email']}</td>
         <td>{$record2['question']}</td>
-        <td><a href='index.php?pageid=delete_question_script&id={$record2['id']}'><i class='bi bi-x-square text-danger'></i><a></td>
+        <td><a href='index.php?content=delete_question_script&id={$record2['id']}'><i class='bi bi-x-square text-danger'></i><a></td>
         </tr>";
     }
 
@@ -56,7 +56,7 @@
         $tbl_rows3 .= "  <tr>
         <td>{$record3['id']}</td>
         <td>{$record3['message']}</td>
-        <td><a href='index.php?pageid=update_voorzitterbericht&id={$record3['id']}'><i class='bi bi-pencil-square'></i><a></td>
+        <td><a href='index.php?content=update_voorzitterbericht&id={$record3['id']}'><i class='bi bi-pencil-square'></i><a></td>
         </tr>";
     }
 
@@ -67,7 +67,7 @@
         <td>{$record4['spelernaam']}</td>
         <td>{$record4['rugnummer']}</td>
         <td>{$record4['teamid']}</td>
-        <td><a href='index.php?pageid=delete_speler_script&id={$record4['id']}'><i class='bi bi-x-square text-danger'></i><a></td>
+        <td><a href='index.php?content=delete_speler_script&id={$record4['id']}'><i class='bi bi-x-square text-danger'></i><a></td>
         </tr>";
     }
 
@@ -99,7 +99,7 @@
                                     <p class="lead">Homepagina nieuwsberichten</p>
                                     <hr class="my-4">
                                     <div class="d-grid gap-2">
-                                        <a href="?pageid=create_nieuwsbericht" class="btn btn-primary"
+                                        <a href="?content=create_nieuwsbericht" class="btn btn-primary"
                                             role="button">Maak Nieuwsbericht</a>
                                         <br>
                                     </div>
@@ -189,7 +189,7 @@
                 <div class="card-body">
                     <p class="lead">Spelers</p>
                     <hr class="my-4">
-                    <a href="?pageid=create_speler" class="btn btn-primary"
+                    <a href="?content=create_speler" class="btn btn-primary"
                                             role="button">Voeg een Speler toe</a>
                     <table class="table table-hover">
                         <thead>

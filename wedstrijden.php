@@ -64,5 +64,27 @@
             </div>
         </div>
         </div>
+        <div class="col-sm">
+            <div class="card text-center">
+                <div class="card-header">
+                    Team D
+                </div>
+                <div class="card-body">
+                   <iframe src="https://embed.hollandsevelden.nl/competities/2021-2022/west-1/zo/4e/?iH=500&amp;iW=350&amp;bH=false&amp;bL=false&amp;bI=null&amp;bR=false&amp;sTFC=%23ffffff&amp;sBC=%23ffffff&amp;sAC=%23f3f3f3" width="350" height="500" frameborder="0" border="0" scrolling="no" style="border:0;"><p><img src="https://www.hollandsevelden.nl/images/joomleague/t_0.png" alt="HollandseVelden.nl"> Alle <a href="https://www.hollandsevelden.nl/competities/2021-2022/west-1/zo/4e/?iH=500&amp;iW=350&amp;bH=false&amp;bL=false&amp;bI=null&amp;bR=false&amp;sTFC=%23ffffff&amp;sBC=%23ffffff&amp;sAC=%23f3f3f3" target="_blank">standen, uitslagen en programma’s in het amateurvoetbal</a> vind je op HollandseVelden.nl</p></iframe>
+                </div>
+               
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card text-center">
+                <div class="card-header">
+                    Team E
+                </div>
+                <div class="card-body">
+                   <iframe src="https://embed.hollandsevelden.nl/competities/2021-2022/west-1/zo/4e/?iH=500&amp;iW=350&amp;bH=false&amp;bL=false&amp;bI=null&amp;bR=false&amp;sTFC=%23ffffff&amp;sBC=%23ffffff&amp;sAC=%23f3f3f3" width="350" height="500" frameborder="0" border="0" scrolling="no" style="border:0;"><p><img src="https://www.hollandsevelden.nl/images/joomleague/t_0.png" alt="HollandseVelden.nl"> Alle <a href="https://www.hollandsevelden.nl/competities/2021-2022/west-1/zo/4e/?iH=500&amp;iW=350&amp;bH=false&amp;bL=false&amp;bI=null&amp;bR=false&amp;sTFC=%23ffffff&amp;sBC=%23ffffff&amp;sAC=%23f3f3f3" target="_blank">standen, uitslagen en programma’s in het amateurvoetbal</a> vind je op HollandseVelden.nl</p></iframe>
+                </div>
+               
+            </div>
+        </div>
     </div>
 </div>

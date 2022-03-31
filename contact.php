@@ -61,7 +61,7 @@
             <div class="col-6">
                 <div class="card">
                     <div class="card-body">
-                        <form form name="contactform" action="?pageid=nieuwe_vraag_script"
+                        <form form name="contactform" action="?content=nieuwe_vraag_script"
                             onsubmit="return validateForm()" method="post">
                             <h2>Stel hier uw vragen<h2>
                                     <hr class="my-3">

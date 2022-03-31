@@ -13,7 +13,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12"></div>
-                            <form name="create_speler" action="?pageid=create_speler_script"
+                            <form name="create_speler" action="?content=create_speler_script"
                                 onsubmit="return validateForm()" method="post">
                                 <div class="form-row">
                                     <div class="form-group">

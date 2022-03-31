@@ -29,7 +29,7 @@
         <br>
         <div class="card">
             <div class="card-body">
-            <a class="btn btn-primary btn-lg" href="?pageid=teams/teame" role="button">Team E</a>
+            <a class="btn btn-primary btn-lg" href="?content=teams/teame" role="button">Team E</a>
             <a class="btn btn-primary btn-lg" href="#" role="button">Team B</a>
             </div>
         </div>

@@ -37,7 +37,7 @@
                             <h5 class="card-title">Onze teams!</h5>
                             <p class="card-text">Bekijk op deze paginas de teams van V.V. Kismet.
                             </p>
-                            <a href="index.php?pageid=teams" class="btn btn-primary">Teams</a>
+                            <a href="index.php?content=teams" class="btn btn-primary">Teams</a>
                         </div>
                     </div>
 
@@ -49,7 +49,7 @@
                             <p class="card-text">Als je vragen hebt voor de club dan kan je deze via een formulier
                                 stellen. <br>Ga hiervoor naar onze contact pagina.
                             </p>
-                            <a href="index.php?pageid=contact" class="btn btn-primary">Contact</a>
+                            <a href="index.php?content=contact" class="btn btn-primary">Contact</a>
                         </div>
                     </div>
                 </div>

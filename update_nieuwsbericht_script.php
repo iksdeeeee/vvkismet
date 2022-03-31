@@ -11,9 +11,9 @@
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-        header("Location: ./index.php?pageid=message&alert=update-succes");
+        header("Location: ./index.php?content=message&alert=update-succes");
     }
     else{
-        header("Location: ./index.php?pageid=message&alert=update-fail");
+        header("Location: ./index.php?content=message&alert=update-fail");
     }
 ?>

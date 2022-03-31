@@ -21,7 +21,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12"></div>
-                    <form form name="update_nieuwsbericht" action="index.php?pageid=update_nieuwsbericht_script"
+                    <form form name="update_nieuwsbericht" action="index.php?content=update_nieuwsbericht_script"
                         onsubmit="return validateForm()" method="post">
                         <div class="form-row">
                             <div class="form-group">
