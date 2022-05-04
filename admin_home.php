@@ -54,9 +54,9 @@
     $tbl_rows3 = "";
     while ($record3 = mysqli_fetch_assoc($result3)) {
         $tbl_rows3 .= "  <tr>
-        <td>{$record3['id']}</td>
+        <td>{$record3['idVoorzitter']}</td>
         <td>{$record3['message']}</td>
-        <td><a href='index.php?content=update_voorzitterbericht&id={$record3['id']}'><i class='bi bi-pencil-square'></i><a></td>
+        <td><a href='index.php?content=update_voorzitterbericht&id={$record3['idVoorzitter']}'><i class='bi bi-pencil-square'></i><a></td>
         </tr>";
     }
 

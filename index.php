@@ -30,7 +30,7 @@
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <h2>Login scherm</h2>
-            <form action="?pageid=login-script" method="post">
+            <form action="?content=login-script" method="post">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Email adres</label>
                     <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
