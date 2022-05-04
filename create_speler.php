@@ -28,7 +28,7 @@
                                     </div>
                                     <br>
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Example select</label>
+                                        <label for="exampleFormControlSelect1">Selecteer Team</label>
                                         <select class="form-control" name="teamid"id="exampleFormControlSelect1">
                                             <option>Team A</option>
                                             <option>Team B</option>

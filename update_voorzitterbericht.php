@@ -8,6 +8,7 @@
     $result = mysqli_query($conn, $sql);
 
     $record = mysqli_fetch_assoc($result);
+    var_dump($_GET);
 ?>
 
 <section>

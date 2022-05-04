@@ -9,7 +9,10 @@
 
     $record = mysqli_fetch_assoc($result);
 
+    var_dump($_GET)
+
 ?>
+
 
 <section>
     <div class="container">

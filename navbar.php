@@ -3,7 +3,7 @@
 
     <a href="?content=home">Home</a>
     <a href="?content=teams">Onze Teams</a>
-    <a href="?content=wedstrijden">Wedstrijden</a>
+    <a href="?content=admin_home">Wedstrijden</a>
     <a href="?content=contact">Contact</a>
 
     <?PHP
