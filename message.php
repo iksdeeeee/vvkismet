@@ -17,6 +17,18 @@
             </div>';
       header("Refresh: 2; ./?content=create_nieuwsbericht");
     break;
+    case "speleradd-succes" :
+      echo '<div class="alert alert-success mt-5 w-50 mx-auto text-center" role="alert">
+             De speler is succesvol toegevoegd.
+            </div>';
+      header("Refresh: 2; ./?content=admin_home");
+    break;
+    case "speleradd-fail" :
+      echo '<div class="alert alert-danger mt-5 w-50 mx-auto text-center" role="alert">
+      De speler is niet toegevoegd, Probeer het nogmaals.
+            </div>';
+      header("Refresh: 2; ./?content=admin_home");
+    break;
 
     case "delete-succes" :
       echo '<div class="alert alert-success mt-5 w-50 mx-auto text-center" role="alert">
