@@ -20,10 +20,9 @@
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-        header("Location: ./index.php?content=message&alert=course-succes");
+        header("Location: ./index.php?content=message&alert=teammsg-succes");
     }   else {
-        // header("Location: ./index.php?content=message&alert=course-fail");
-        var_dump($sql);
+        header("Location: ./index.php?content=message&alert=teammsg-fail");
     }
 
 

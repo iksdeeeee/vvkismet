@@ -33,15 +33,15 @@ if (!empty($email) && !empty($password)) {
         }else {
             echo '<div class="alert alert-danger" role="alert">
     Het door u opgegeven emailadres is niet bekend. Probeer het opnieuw.</div>';
-            header("Refresh: 4; url=./index.php?content=loginform");
+            header("Refresh: 4; url=./index.php?content=home");
         }
     } else {
         echo '<div class="alert alert-danger" role="alert">
     Het door u opgegeven emailadres is niet bekend. Probeer het opnieuw.</div>';
-        header("Refresh: 4; url=./index.php?content=loginform");
+        header("Refresh: 4; url=./index.php?content=home");
     }
 } else {
     echo '<div class="alert alert-danger" role="alert">
     1 van uw velden is leeg.</div>';
-    header("Refresh: 3; url=./index.php?content=loginform&email=$email");
+    header("Refresh: 3; url=./index.php?content=home&email=$email");
 }

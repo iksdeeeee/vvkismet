@@ -2,7 +2,6 @@
     <?php
     include("./functions.php");
 
-    // var_dump($_POST);
 
     $name = sanitize($_POST["spelernaam"]);
     $number = sanitize($_POST["rugnummer"]);

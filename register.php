@@ -45,12 +45,10 @@ if (mysqli_num_rows($result) == 1) {
                             '$email',
                             '$funtie',
                              $userid)";
-   //echo $sql;
     $result = mysqli_query($conn, $sql);
 
     $id = mysqli_insert_id($conn);
 
-    //var_dump($result);
 
     if ($result) {
 
