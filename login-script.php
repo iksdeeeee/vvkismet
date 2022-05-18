@@ -29,7 +29,7 @@ if (!empty($email) && !empty($password)) {
 
 
 
-                    header("Location: ./index.php?content=home");
+                    header("Location: ./index.php?content=admin_home");
         }else {
             echo '<div class="alert alert-danger" role="alert">
     Het door u opgegeven emailadres is niet bekend. Probeer het opnieuw.</div>';
