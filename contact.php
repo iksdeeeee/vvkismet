@@ -88,21 +88,15 @@
                                         <br>
                                         <button type="submit" class="btn btn-primary">Verzenden</button>
                                     </div>
-
                         </form>
                     </div>
                 </div>
 
             </div>
         </div>
-
-
     </div>
-    <!-- </div> -->
 
     <body>
-        <!-- <main> -->
-
 </div>
 <br>
 <div class="container" id="map">

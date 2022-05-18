@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 31 mrt 2022 om 00:35
+-- Gegenereerd op: 18 mei 2022 om 00:20
 -- Serverversie: 5.7.31
 -- PHP-versie: 7.3.21
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `contactform` (
   `email` varchar(35) NOT NULL,
   `question` varchar(500) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -48,14 +48,15 @@ CREATE TABLE IF NOT EXISTS `nieuws` (
   `bericht` varchar(300) NOT NULL,
   `datum` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `nieuws`
 --
 
 INSERT INTO `nieuws` (`id`, `bericht`, `datum`) VALUES
-(20, 'Test 2322', '2022-03-31 01:33:21');
+(24, 'test 555dsds', '2022-05-16 14:15:37'),
+(23, 'test', '2022-05-12 00:47:30');
 
 -- --------------------------------------------------------
 
@@ -70,7 +71,19 @@ CREATE TABLE IF NOT EXISTS `spelers` (
   `rugnummer` varchar(100) NOT NULL,
   `teamid` enum('Team A','Team B','Team C','Team D','Team E') NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `spelers`
+--
+
+INSERT INTO `spelers` (`id`, `spelernaam`, `rugnummer`, `teamid`) VALUES
+(1, 'Kees van der spek', '32', 'Team E'),
+(2, 'Hendrik overmaat', '3', 'Team E'),
+(3, 'sdsd', '34', 'Team D'),
+(5, 'dsds', '23', 'Team A'),
+(6, 'Kees henk', '27', 'Team D'),
+(7, 'dsdsds', '22', 'Team E');
 
 -- --------------------------------------------------------
 
@@ -81,18 +94,20 @@ CREATE TABLE IF NOT EXISTS `spelers` (
 DROP TABLE IF EXISTS `teammsg`;
 CREATE TABLE IF NOT EXISTS `teammsg` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `teamID` enum('e','b') NOT NULL,
+  `teamID` enum('A','B','C','D','E') NOT NULL,
   `message` varchar(250) NOT NULL,
   `date` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `teammsg`
 --
 
 INSERT INTO `teammsg` (`id`, `teamID`, `message`, `date`) VALUES
-(1, 'e', 'Kan iemand de kleding van de vorige week wassen en meenemen?', '2022-03-18 01:01:20');
+(3, 'E', 'eweqweqweqweq', '2022-05-16 12:00:08'),
+(4, 'E', 'sdsd', '2022-05-16 13:27:40'),
+(5, 'E', 'dfdsfsd', '2022-05-16 13:45:18');
 
 -- --------------------------------------------------------
 
@@ -139,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `voorzitter` (
 --
 
 INSERT INTO `voorzitter` (`id`, `message`) VALUES
-(1, 'Hallo iedereen en Welkom op de website van V.V. Kismet.');
+(1, 'Welkom op V.V. Kismet, kijk verder op onze website en hopelijk vindt u alle informatie die u nodig heeft!');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

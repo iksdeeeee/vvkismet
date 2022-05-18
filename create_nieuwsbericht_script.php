@@ -2,7 +2,6 @@
     <?php
     include("./functions.php");
 
-    // var_dump($_POST);
 
     $bericht = sanitize($_POST["bericht"]);
 

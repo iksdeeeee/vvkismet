@@ -2,11 +2,12 @@
     include("./functions.php");
 
     $id = sanitize($_POST["id"]);
+    $teamid = sanitize($_POST["teamid"]);
     $bericht = sanitize($_POST["bericht"]);
 
-    $sql = "UPDATE `nieuws` 
-            SET `id`= {$id},`bericht`='{$bericht}',`datum`= now()
-            WHERE `id`= {$id}";
+    $sql = "UPDATE `teammsg`
+             SET `id`= {$id},`teamID`='{$teamid}', `message`='{$bericht}',`date`= now() 
+             WHERE `id`= {$id}";
 
     $result = mysqli_query($conn, $sql);
 
@@ -14,6 +15,6 @@
         header("Location: ./index.php?content=message&alert=update-succes");
     }
     else{
-       header("Location: ./index.php?content=message&alert=update-fail");
+        header("Location: ./index.php?content=message&alert=update-fail");
     }
 ?>
